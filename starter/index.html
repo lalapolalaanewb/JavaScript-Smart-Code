@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import custom css -->
+    <link rel="stylesheet" href="../starter/css/style.css">
+    <title>Budget</title>
+</head>
+<body>
+    <!-- top nav bar menu -->
+    <div class="top_nav">
+        <!-- logo -->
+        <div class="logo">Bud<span>get</span></div>
+    </div>
+
+    <!-- main content -->
+    <div class="main_content">
+        <!-- top part content -->
+        <div class="top_part-content">
+            <!-- title & date -->
+            <div class="content-title">Total Budget in <span class="date_now">Month Year</span></div>
+            <!-- total budget -->
+            <div class="content-total_budget">00.00</div>
+            <!-- budegt category -->
+            <div class="content-category">
+                <!-- income category -->
+                <div class="category-income">
+                    <!-- income title -->
+                    <div class="income-title">Income</div>
+                    <!-- income total -->
+                    <div class="income-total_value">+ 00.00</div>
+                </div>
+                <!-- expenses category -->
+                <div class="category-expenses">
+                    <!-- expenses title -->
+                    <div class="expenses-title">Expenses</div>
+                    <!-- expenses total value -->
+                    <div class="expenses-total_value">- 00.00</div>
+                    <!-- expenses total percentage -->
+                    <div class="expenses-total_percentage">0%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- middle part content -->
+        <div class="middle_part-content">
+            <!-- selection input (+ or -)-->
+            <select class="content-item_type">
+                <!-- item type: income -->
+                <option value="income" selected>+</option>
+                <!-- item type: expenses -->
+                <option value="expenses">-</option>
+            </select>
+            <!-- description input -->
+            <input type="text" class="content-item_desc" placeholder="Add desc...">
+            <!-- value input -->
+            <input type="number" step=".01" min="0" max="9999.99" class="content-item_value" placeholder="Add value...">
+            <!-- submit button -->
+            <div class="content-item_submit">
+                <div class="submit-circle"></div>
+                <div class="submit-stem"></div>
+                <div class="submit-kick"></div>
+            </div>
+        </div>
+
+        <!-- bottom part content -->
+        <div class="bottom_part-content">
+            <!-- income list -->
+            <div class="content-income_list">
+                <!-- income content -->
+                <!-- <div class="income_list-detail" id="inc-1"> -->
+                    <!-- income desc -->
+                    <!-- <div class="detail-income_desc">Side Job 1</div> -->
+                    <!-- income value -->
+                    <!-- <div class="detail-income_value">+ 100.00</div> -->
+                    <!-- income delete -->
+                    <!-- <div class="detail-income_delete"><p></p></div> -->
+                <!-- </div> -->
+            </div>
+            <!-- expenses list -->
+            <div class="content-expenses_list">
+                <!-- expenses content -->
+                <!-- <div class="expenses_list-detail" id="exp-1"> -->
+                    <!-- expenses desc -->
+                    <!-- <div class="detail-expenses_desc">Rent</div> -->
+                    <!-- expenses value -->
+                    <!-- <div class="detail-expenses_value">- 100.00</div> -->
+                    <!-- expenses percentage -->
+                    <!-- <div class="detail-expenses_percentage">0%</div> -->
+                    <!-- expenses delete -->
+                    <!-- <div class="detail-expenses_delete"><p></p></div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Normal Style JavaScript Code -->
+    <script src="../starter/js/indexNormal.js" type="text/javascript"></script>
+    <!-- Neat Style JavaScript Code -->
+    <!-- <script src="../starter/js/indexNeat.js" type="text/javascript"></script> -->
+</body>
+</html>
